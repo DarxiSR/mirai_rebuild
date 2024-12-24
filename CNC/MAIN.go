@@ -110,7 +110,3 @@ func __READ_BYTES(_CONNECTION net.Conn, _BUFFER []byte) (error) {
 
     return nil
 }
-
-func netshift(_PREFIX uint32, _NETMASK uint8) uint32 {
-    return uint32(_PREFIX >> (32 - _NETMASK))
-}
