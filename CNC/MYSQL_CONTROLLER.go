@@ -115,7 +115,7 @@ func (_THIS *Database) __CHECK_WHITE_LISTED_TARGETS(_ATTACK *__ATTACK) bool {
             _GET_ATTACK_PREFIX := binary.BigEndian.Uint32(_GET_LOCAL_BUFFER)
 
             if GET_LOCAL_SETTER > _NETMASK {
-                if netshift(_WHITE_LIST_PREFIX, _NETMASK) == netshift(_GET_ATTACK_PREFIX, _NETMASK) {
+                if __NET_MASKED(_WHITE_LIST_PREFIX, _NETMASK) == __NET_MASKED(_GET_ATTACK_PREFIX, _NETMASK) {
                     return true
                 }
             } else if GET_LOCAL_SETTER < _NETMASK {
