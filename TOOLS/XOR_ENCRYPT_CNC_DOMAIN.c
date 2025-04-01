@@ -35,8 +35,8 @@ void __INIT(char *_INPUT_BUFFER, int _INPUT_BUFFER_LENGHT)
         }
     }
 
-    printf("[+] TOTAL BYTES: ", _INPUT_BUFFER_LENGHT, "\n");
-    printf("XOR ENCRYPTED RESULT: \n");
+    printf("[+] TOTAL BYTES: %d", _INPUT_BUFFER_LENGHT);
+    printf("\n[+] XOR ENCRYPTED RESULT: ");
 
     for (int GET_COUNTER = 0; GET_COUNTER < _INPUT_BUFFER_LENGHT; GET_COUNTER++) 
     {
